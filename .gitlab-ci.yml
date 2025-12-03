@@ -1,0 +1,35 @@
+image: node:18
+
+stages:
+  - build
+  - deploy
+
+cache:
+  paths:
+    - node_modules/
+
+# Build the React app
+build:
+  stage: build
+  script:
+    - npm ci
+    - npm run build
+  artifacts:
+    paths:
+      - dist/
+    expire_in: 1 hour
+  only:
+    - master
+
+# Deploy to GitLab Pages
+pages:
+  stage: deploy
+  script:
+    - mkdir .public
+    - cp -r dist/* .public
+    - mv .public public
+  artifacts:
+    paths:
+      - public
+  only:
+    - master

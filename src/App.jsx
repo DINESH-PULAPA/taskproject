@@ -1,19 +1,19 @@
 import React from 'react';
-import Scene from './components/Scene';
-import ErrorBoundary from './components/ErrorBoundary';
-import ThemeToggle from './components/ThemeToggle';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import ErrorBoundary from './components/ui/ErrorBoundary';
 import { ThemeProvider } from './context/ThemeContext';
-import './App.css';
 
 function App() {
   return (
     <ThemeProvider>
-      <div className="App">
-        <ErrorBoundary>
-          <Scene />
-          <ThemeToggle />
-        </ErrorBoundary>
-      </div>
+      <ErrorBoundary>
+        <Router>
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </Router>
+      </ErrorBoundary>
     </ThemeProvider>
   );
 }

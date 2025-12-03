@@ -56,6 +56,7 @@
     {
       "link": "https://google.com",
       "company": "Big Data Storm",
+      "backgroundImage": "https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?w=800&h=1200&fit=crop",
       "date": "2015-10",
       "summary": "Built GPU-based big data sorting solutions to speed up sorting and analytically challenging processes.",
       "highlights": [
@@ -67,6 +68,7 @@
     {
       "link": "https://google.com",
       "company": "Artnet",
+      "backgroundImage": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=1200&fit=crop",
       "date": "2014-06",
       "summary": "Full cycle of marketing and financial reporting for every department in organization: data integration, data warehouse development, web log analysis, ETL via SSIS, reporting via SSRS, complex SQL development, Git, Google Analytics and email logs to data warehouse feeds, business analysis and development of data products and reports for dozens of customers within company.",
       "highlights": [
@@ -79,6 +81,7 @@
     {
       "link": "https://google.com",
       "company": "RER Research",
+      "backgroundImage": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=1200&fit=crop",
       "date": "2003-03",
       "summary": "Built a data warehouse/analytical system for 24/5 real-time financial markets analysis using various financial, exchange and regulatory data.",
       "highlights": [
@@ -119,6 +122,7 @@
     {
       "company": "Staten Island Performing Provider System",
       "companyNameColor": "#368E00",
+      "backgroundImage": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=1200&fit=crop",
       "start": {
         "year": "2017",
         "month": "04",
@@ -141,6 +145,7 @@
     {
       "company": "Big Data Storm",
       "companyNameColor": "#B20000",
+      "backgroundImage": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=1200&fit=crop",
       "start": {
         "year": "2015",
         "month": "10",
@@ -162,6 +167,7 @@
     {
       "company": "Artnet",
       "companyNameColor": "#008DAC",
+      "backgroundImage": "https://images.unsplash.com/photo-1561487138-99ccf59b135c?w=800&h=1200&fit=crop",
       "start": {
         "year": "2014",
         "month": "06",
@@ -184,6 +190,7 @@
     {
       "company": "RER Research",
       "companyNameColor": "#368E00",
+      "backgroundImage": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&h=1200&fit=crop",
       "start": {
         "year": "2003",
         "month": "03",
@@ -207,6 +214,7 @@
     {
       "company": "RxClinical Corp.",
       "companyNameColor": "#B20000",
+      "backgroundImage": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=1200&fit=crop",
       "start": {
         "year": "2005",
         "month": "10",
@@ -230,6 +238,7 @@
     {
       "company": "DoubleClick, Inc. (now Google)",
       "companyNameColor": "#008DAC",
+      "backgroundImage": "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=800&h=1200&fit=crop",
       "start": {
         "year": "2008",
         "month": "08",
@@ -248,6 +257,7 @@
     {
       "company": "AIG, Inc.",
       "companyNameColor": "#008DAC",
+      "backgroundImage": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=1200&fit=crop",
       "start": {
         "year": "2008",
         "month": "08",
@@ -266,6 +276,7 @@
     {
       "company": "Metropolitan Life Insurance Company",
       "companyNameColor": "#B20000",
+      "backgroundImage": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=1200&fit=crop",
       "start": {
         "year": "2008",
         "month": "08",
@@ -286,6 +297,7 @@
   "skills": [
     {
       "name": "Technologies",
+      "backgroundImage": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=800&h=1200&fit=crop",
       "keywords": [
         "Google Analytics",
         "Excel", "Tableau", "Looker",
@@ -303,6 +315,7 @@
     },
     {
       "name": "Data Science",
+      "backgroundImage": "https://images.unsplash.com/photo-1527474305487-b87b222841cc?w=800&h=1200&fit=crop",
       "keywords": [
         "MLib",
         "Pandas",
@@ -318,6 +331,7 @@
       "institutionFirstPart": "New York University",
       "institutionSecondPart": "Stern School of Business",
       "institutionColor": "#008DAC",
+      "backgroundImage": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&h=1200&fit=crop",
       "area": "Management with concentration in Marketing, Finance and IS",
       "studyType": "MBA",
       "startDate": "1998",
@@ -327,6 +341,7 @@
       "institutionFirstPart": "New York University",
       "institutionSecondPart": "Stern School of Business",
       "institutionColor": "#368E00",
+      "backgroundImage": "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=800&h=1200&fit=crop",
       "area": "Accounting with Minor in Economics",
       "studyType": "BS",
       "startDate": "1899",

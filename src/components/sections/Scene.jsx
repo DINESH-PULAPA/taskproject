@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Parallax from 'parallax-js';
-import Tile from './Tile';
-import Switch from './Switch';
-import resumeData from '../data/data1.json';
+import Tile from '../ui/Tile';
+import Switch from '../ui/Switch';
+import resumeData from '../../data/data1.json';
 
 const Scene = () => {
     const sceneRef = useRef(null);
@@ -19,7 +19,8 @@ const Scene = () => {
         { value: 'work', label: 'Experience' },
         { value: 'education', label: 'Education' },
         { value: 'skills', label: 'Skills' },
-        { value: 'projects', label: 'Projects' }
+        { value: 'projects', label: 'Projects' },
+        { value: 'achievements', label: 'Achievements' }
     ];
 
     // Transform resume data into tile format with error handling
@@ -33,7 +34,9 @@ const Scene = () => {
                     date: `${item.start?.year || ''} - ${item.end?.year || ''}`,
                     position: item.start?.position,
                     highlights: item.highlights,
-                    color: item.companyNameColor
+                    color: item.companyNameColor,
+                    backgroundImage: item.backgroundImage,
+                    link: item.link
                 })),
                 ...(resumeData?.education || []).map(item => ({
                     type: 'education',
@@ -41,13 +44,17 @@ const Scene = () => {
                     summary: `${item.studyType} in ${item.area}`,
                     date: `${item.startDate} - ${item.endDate}`,
                     subtitle: item.institutionSecondPart,
-                    color: item.institutionColor
+                    color: item.institutionColor,
+                    backgroundImage: item.backgroundImage,
+                    link: item.link
                 })),
                 ...(resumeData?.skills || []).map(item => ({
                     type: 'skills',
                     title: item.name,
                     summary: item.keywords?.join(', ') || '',
-                    keywords: item.keywords
+                    keywords: item.keywords,
+                    backgroundImage: item.backgroundImage,
+                    link: item.link
                 })),
                 ...(resumeData?.projects || []).map(item => ({
                     type: 'projects',
@@ -55,7 +62,16 @@ const Scene = () => {
                     summary: item.summary,
                     date: item.date,
                     highlights: item.highlights,
-                    link: item.link
+                    link: item.link,
+                    backgroundImage: item.backgroundImage
+                })),
+                ...(resumeData?.achievements || []).map(item => ({
+                    type: 'achievements',
+                    title: item.head || item.title,
+                    summary: item.desc || item.description,
+                    subtitle: item.company || item.organization,
+                    link: item.link,
+                    backgroundImage: item.backgroundImage || 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=1200&fit=crop'
                 }))
             ];
         } catch (error) {
@@ -156,11 +172,16 @@ const Scene = () => {
                 />
             </div>
             <div
-                className="layer main w-full absolute z-10 p-5 pointer-events-none"
+                className="layer main absolute z-10 pointer-events-none"
                 data-depth="1.0"
                 data-scalar-x="25"
                 data-scalar-y="35"
-                style={{ height: dimensions.height }}
+                style={{ 
+                    height: dimensions.height,
+                    width: '150%',
+                    left: '-25%',
+                    padding: '20px'
+                }}
             >
                 <div className="w-full">
                     {filteredData.map((item, index) => (

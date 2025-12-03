@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { FaDownload, FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaReact, FaNodeJs, FaPython, FaDatabase, FaAws } from 'react-icons/fa';
+import { FaDownload, FaGithub, FaLinkedin, FaXTwitter, FaEnvelope, FaReact, FaNodeJs, FaPython, FaDatabase, FaAws } from 'react-icons/fa6';
 import { SiTypescript, SiNextdotjs, SiExpress, SiDjango, SiMongodb } from 'react-icons/si';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -22,7 +22,7 @@ const About = () => {
     const socialLinks = [
         { icon: <FaGithub size={24} />, url: 'https://github.com', label: 'GitHub' },
         { icon: <FaLinkedin size={24} />, url: 'https://linkedin.com', label: 'LinkedIn' },
-        { icon: <FaTwitter size={24} />, url: 'https://twitter.com', label: 'Twitter' },
+        { icon: <FaXTwitter size={24} />, url: 'https://x.com', label: 'X' },
         { icon: <FaEnvelope size={24} />, url: 'mailto:your.email@example.com', label: 'Email' }
     ];
 

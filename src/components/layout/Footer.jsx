@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaArrowUp } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaXTwitter, FaEnvelope, FaArrowUp } from 'react-icons/fa6';
 
 const Footer = () => {
     const scrollToTop = () => {
@@ -9,7 +9,7 @@ const Footer = () => {
     const socialLinks = [
         { icon: <FaGithub />, url: 'https://github.com', label: 'GitHub' },
         { icon: <FaLinkedin />, url: 'https://linkedin.com', label: 'LinkedIn' },
-        { icon: <FaTwitter />, url: 'https://twitter.com', label: 'Twitter' },
+        { icon: <FaXTwitter />, url: 'https://x.com', label: 'X' },
         { icon: <FaEnvelope />, url: 'mailto:your.email@example.com', label: 'Email' }
     ];
 
@@ -28,19 +28,24 @@ const Footer = () => {
                     </div>
 
                     {/* Quick Links */}
-                    <div>
+                    <div className="flex flex-col items-center">
                         <h4 className="text-lg font-semibold mb-4" style={{ color: 'var(--text-primary)' }}>
                             Quick Links
                         </h4>
-                        <ul className="space-y-2">
-                            {['Home', 'About', 'Projects', 'Contact'].map((link) => (
-                                <li key={link}>
+                        <ul className="space-y-2 flex flex-col items-center">
+                            {[
+                                { name: 'Home', href: '#hero' },
+                                { name: 'About', href: '#about' },
+                                { name: 'Projects', href: '#projects' },
+                                { name: 'Contact', href: '#contact' }
+                            ].map((link) => (
+                                <li key={link.name}>
                                     <a
-                                        href={`#${link.toLowerCase()}`}
+                                        href={link.href}
                                         className="text-sm hover:text-[var(--cta)] transition-colors"
                                         style={{ color: 'var(--text-secondary)' }}
                                     >
-                                        {link}
+                                        {link.name}
                                     </a>
                                 </li>
                             ))}

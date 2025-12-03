@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Voltaire');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Default Theme (Dark - original) */
+:root {
+  --bg: #304056;
+  --card: #2c3e50;
+  --text-primary: #ffffff;
+  --text-secondary: #e0e0e0;
+  --cta: #eb7498;
+  --cta-text: #ffffff;
+  --cta-glow: rgba(235, 116, 152, 0.4);
+}
+
+/* Theme 1: Royal Purple */
+.theme-purple {
+  --bg: #F7F3FF;
+  --card: #FFFFFF;
+  --text-primary: #2C1E47;
+  --text-secondary: #5B4F75;
+  --cta: #7C3AED;
+  --cta-text: #FFFFFF;
+  --cta-glow: rgba(124, 58, 237, 0.4);
+}
+
+/* Theme 2: Cyber Red */
+.theme-red {
+  --bg: #FFF4F4;
+  --card: #FFFFFF;
+  --text-primary: #2B1919;
+  --text-secondary: #5A3737;
+  --cta: #EF4444;
+  --cta-text: #FFFFFF;
+  --cta-glow: rgba(239, 68, 68, 0.4);
+}
+
+/* Theme 3: Ocean Teal */
+.theme-teal {
+  --bg: #F0FAFA;
+  --card: #FFFFFF;
+  --text-primary: #073B3A;
+  --text-secondary: #3A5F5E;
+  --cta: #0D9488;
+  --cta-text: #FFFFFF;
+  --cta-glow: rgba(13, 148, 136, 0.4);
+}
+
+/* Smooth theme transitions */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Custom animations */
+@keyframes scale-in {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive Navigation Media Queries */
+/* Mobile: Show mobile nav, hide desktop nav */
+@media (max-width: 1023px) {
+  #desktop-nav {
+    display: none !important;
+  }
+  #mobile-nav {
+    display: block !important;
+  }
+  /* Only the hamburger button should be fixed */
+  #mobile-nav > button {
+    position: fixed !important;
+    z-index: 99999 !important;
+  }
+  /* Menu panel should be fixed */
+  #mobile-nav > div {
+    position: fixed !important;
+    z-index: 99998 !important;
+  }
+  /* Backdrop should be behind menu panel */
+  #mobile-nav > div > div:first-child {
+    z-index: 99997 !important;
+  }
+}
+
+/* Desktop: Show desktop nav, hide mobile nav */
+@media (min-width: 1024px) {
+  #desktop-nav {
+    display: flex !important;
+    z-index: 99999 !important;
+  }
+  #mobile-nav {
+    display: none !important;
+  }
+}
+
+@layer base {
+  body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--bg);
+    color: var(--text-primary);
+  }
+}

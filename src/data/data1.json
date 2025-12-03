@@ -1,0 +1,337 @@
+{
+  "basics": {
+    "fulltimeResume": "false",
+    "firstName": "Anatoly",
+    "lastName": "Raklyar",
+    "label": "BI and Data Science",
+    "summary": "Seasoned technology professional with demonstrated experience building complex intelligence systems.",
+    "headerContacts" : [
+      {
+        "text": "US",
+        "link": "https://wa.me/+16463732266",
+        "icon": "WhatsApp"
+      },
+      {
+        "text": "IL",
+        "link": "tel:0502209852",
+        "icon": "Phone"
+      },
+      {
+        "text": "US",
+        "link": "tel:+16463732266",
+        "icon": "Phone"
+      },
+      {
+        "text": "",
+        "link": "mailto:traklyar@yahoo.com",
+        "icon": "Mail"
+      }
+    ],
+    "barContacts": [
+      {
+        "text": "",
+        "link": "https://www.linkedin.com/in/anatoly-raklyar-06034069/",
+        "icon": "LinkedIn"
+      }
+    ]
+  },
+  "achievements": [
+    {
+      "link": "https://google.com",
+      "head": "Got first place in mario",
+      "desc": "Championship"
+    },
+    {
+      "link": "https://google.com",
+      "head": "Got second place in mario",
+      "desc": "Championship"
+    },
+    {
+      "link": "https://google.com",
+      "head": "Got third place in mario",
+      "desc": "Championship"
+    }
+  ],
+  "projects": [
+    {
+      "link": "https://google.com",
+      "company": "Big Data Storm",
+      "date": "2015-10",
+      "summary": "Built GPU-based big data sorting solutions to speed up sorting and analytically challenging processes.",
+      "highlights": [
+        "Created a component to seamlessly replace CPU-based sorter with GPU-based equivalent for large scale ETL implementations.",
+        "Used existing and cutting-edge CUDA algorithms to parallellize complex sorting.",
+        "Enabled same simultaneous data insights using simultaneous in-memory on-the-fly analytical processing."
+      ]
+    },
+    {
+      "link": "https://google.com",
+      "company": "Artnet",
+      "date": "2014-06",
+      "summary": "Full cycle of marketing and financial reporting for every department in organization: data integration, data warehouse development, web log analysis, ETL via SSIS, reporting via SSRS, complex SQL development, Git, Google Analytics and email logs to data warehouse feeds, business analysis and development of data products and reports for dozens of customers within company.",
+      "highlights": [
+        "Enhanced product offering while reducing churn by 30% through integrating Google Analytics with existing analytics infrastructure",
+        "Significantly improved targeting by including 360 degree view of customer interests into existing list generation process.",
+        "Improved customer experience by introducing new QA code that caught complex billing issues.",
+        "Improved analytics for every customer-facing department in the company."
+      ]
+    },
+    {
+      "link": "https://google.com",
+      "company": "RER Research",
+      "date": "2003-03",
+      "summary": "Built a data warehouse/analytical system for 24/5 real-time financial markets analysis using various financial, exchange and regulatory data.",
+      "highlights": [
+        "C# for gathering, real-time and batch ETL processing of various high and low latency financial market data.",
+        "Sophisticated data quality procedures to ensure clean data in and out.",
+        "Data mining market data and establishing patterns and causality relationships using state of the art machine learning technologies.",
+        "Developing and implementing trading algorithms.",
+        "Ab Intio and Informatica consulting – financial data processing, data modeling, and data quality assurance."
+      ]
+    }
+  ],
+  "additionalAudio": {
+    "popUpOrHeaderAudio": "audio1.mp3",
+    "skillsAudio": "audio1.mp3",
+    "educationAudio": "audio1.mp3"
+  },
+  "downloadFulltime": [
+    {
+      "name": "Resume",
+      "link": "./data/Resume/US.docx"
+    },
+    {
+      "name": "Letter",
+      "link": "./data/Resume/IL.docx"
+    }
+  ],
+  "downloadFreelance": [
+    {
+      "name": "Resume",
+      "link": "./data/Resume/US.docx"
+    },
+    {
+      "name": "Letter",
+      "link": "./data/Resume/IL.docx"
+    }
+  ],
+  "work": [
+    {
+      "company": "Staten Island Performing Provider System",
+      "companyNameColor": "#368E00",
+      "start": {
+        "year": "2017",
+        "month": "04",
+        "position": "Data Analytics Lead"
+      },
+      "end": {
+        "year": "2019",
+        "month": "03",
+        "position": "Data Analytics Lead"
+      },
+      "audioName": "audio1.mp3",
+      "summary": "Built Azure-based data warehouse to improve healthcare delivery",
+      "highlights": [
+        "Managed ETL, analytics and reports distribution related to dozens of agencies and providers and over one hundred thousand patients",
+        "Migrated infrastructure from on-premise to Azure cloud",
+        "Increased number of data sources, improved processing speed and data availability",
+        "Oversaw teams of consultants supporting cloud and workstation infrastructure"
+      ]
+    },
+    {
+      "company": "Big Data Storm",
+      "companyNameColor": "#B20000",
+      "start": {
+        "year": "2015",
+        "month": "10",
+        "position": "Cofounder"
+      },
+      "end": {
+        "year": "2017",
+        "month": "04",
+        "position": "Cofounder"
+      },
+      "audioName": "audio2.mp3",
+      "summary": "Built GPU-based big data sorting solutions to speed up sorting and analytically challenging processes.",
+      "highlights": [
+        "Created a component to seamlessly replace CPU-based sorter with GPU-based equivalent for large scale ETL implementations.",
+        "Used existing and cutting-edge CUDA algorithms to parallellize complex sorting.",
+        "Enabled same simultaneous data insights using simultaneous in-memory on-the-fly analytical processing."
+      ]
+    },
+    {
+      "company": "Artnet",
+      "companyNameColor": "#008DAC",
+      "start": {
+        "year": "2014",
+        "month": "06",
+        "position": "Data Scientist"
+      },
+      "end": {
+        "year": "2015",
+        "month": "10",
+        "position": "Data Scientist"
+      },
+      "audioName": "audio3.mp3",
+      "summary": "Full cycle of marketing and financial reporting for every department in organization: data integration, data warehouse development, web log analysis, ETL via SSIS, reporting via SSRS, complex SQL development, Git, Google Analytics and email logs to data warehouse feeds, business analysis and development of data products and reports for dozens of customers within company.",
+      "highlights": [
+        "Enhanced product offering while reducing churn by 30% through integrating Google Analytics with existing analytics infrastructure",
+        "Significantly improved targeting by including 360 degree view of customer interests into existing list generation process.",
+        "Improved customer experience by introducing new QA code that caught complex billing issues.",
+        "Improved analytics for every customer-facing department in the company."
+      ]
+    },
+    {
+      "company": "RER Research",
+      "companyNameColor": "#368E00",
+      "start": {
+        "year": "2003",
+        "month": "03",
+        "position": "Principal"
+      },
+      "end": {
+        "year": "2014",
+        "month": "06",
+        "position": "Principal"
+      },
+      "audioName": "audio4.mp3",
+      "summary": "Built a data warehouse/analytical system for 24/5 real-time financial markets analysis using various financial, exchange and regulatory data.",
+      "highlights": [
+        "C# for gathering, real-time and batch ETL processing of various high and low latency financial market data.",
+        "Sophisticated data quality procedures to ensure clean data in and out.",
+        "Data mining market data and establishing patterns and causality relationships using state of the art machine learning technologies.",
+        "Developing and implementing trading algorithms.",
+        "Ab Intio and Informatica consulting – financial data processing, data modeling, and data quality assurance."
+      ]
+    },
+    {
+      "company": "RxClinical Corp.",
+      "companyNameColor": "#B20000",
+      "start": {
+        "year": "2005",
+        "month": "10",
+        "position": "Consultant"
+      },
+      "end": {
+        "year": "2008",
+        "month": "08",
+        "position": "Consultant"
+      },
+      "audioName": "audio5.mp3",
+      "summary": "Developed and supported data infrastructure for a clinical research organization.",
+      "highlights": [
+        "Developed logical and physical database structures to capture results of clinical tests.",
+        "Provided statistical input for design of protocols.",
+        "Recommended statistical designs that would be acceptable to regulators.",
+        "Analyzed and reported results of clinical trials. Provided tables, listings and graphs for final study reports.",
+        "Provided project requirements to programmers, managed outside CROs and consultants."
+      ]
+    },
+    {
+      "company": "DoubleClick, Inc. (now Google)",
+      "companyNameColor": "#008DAC",
+      "start": {
+        "year": "2008",
+        "month": "08",
+        "position": "Technical Project Leader"
+      },
+      "end": {
+        "year": "2008",
+        "month": "08",
+        "position": "Technical Project Leader"
+      },
+      "audioName": "audio6.mp3",
+      "summary": "Developed large scale Business Intelligence solution for e-commerce strategy formulation and web site personalization. Project resulted in substantial growth in global installations and improvement in functionality and scalability across all products.",
+      "highlights": [
+      ]
+    },
+    {
+      "company": "AIG, Inc.",
+      "companyNameColor": "#008DAC",
+      "start": {
+        "year": "2008",
+        "month": "08",
+        "position": "Database Administrator"
+      },
+      "end": {
+        "year": "2008",
+        "month": "08",
+        "position": "Database Administrator"
+      },
+      "audioName": "audio7.mp3",
+      "summary": "Developed enterprise-wide data warehouse environment for marketing, CRM, and data mining. Project grew into corporate data warehouse environment storing information on all B2B relationships resulting in significant improvement in operations efficiency.",
+      "highlights": [
+      ]
+    },
+    {
+      "company": "Metropolitan Life Insurance Company",
+      "companyNameColor": "#B20000",
+      "start": {
+        "year": "2008",
+        "month": "08",
+        "position": "Actuarial Student"
+      },
+      "end": {
+        "year": "2008",
+        "month": "08",
+        "position": "Actuarial Student"
+      },
+      "audioName": "audio8.mp3",
+      "summary": "",
+      "highlights": [
+
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Technologies",
+      "keywords": [
+        "Google Analytics",
+        "Excel", "Tableau", "Looker",
+        "Hadoop", "Spark",
+        "ERWin",
+        "SQL Server",
+        "SSIS, SSRS, SSAS",
+        "Visual Studio Development",
+        "Python",
+        "Google GTM", "Integration",
+        "Ab Initio",
+        "C#",
+        "Git"
+      ]
+    },
+    {
+      "name": "Data Science",
+      "keywords": [
+        "MLib",
+        "Pandas",
+        "SAS",
+        "SPSS",
+        "TensorFlow", "Keras",
+        "CUDA Algos"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institutionFirstPart": "New York University",
+      "institutionSecondPart": "Stern School of Business",
+      "institutionColor": "#008DAC",
+      "area": "Management with concentration in Marketing, Finance and IS",
+      "studyType": "MBA",
+      "startDate": "1998",
+      "endDate": "2002"
+    },
+    {
+      "institutionFirstPart": "New York University",
+      "institutionSecondPart": "Stern School of Business",
+      "institutionColor": "#368E00",
+      "area": "Accounting with Minor in Economics",
+      "studyType": "BS",
+      "startDate": "1899",
+      "endDate": "1993"
+    }
+  ]
+}
+  

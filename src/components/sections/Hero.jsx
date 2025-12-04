@@ -66,7 +66,7 @@ const Hero = () => {
 
                     <motion.p
                         className="text-lg md:text-xl mb-12 max-w-2xl mx-auto"
-                        style={{ color: 'var(--text-secondary)' }}
+                        style={{ color: 'white' }}
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.8 }}
@@ -76,14 +76,14 @@ const Hero = () => {
                     </motion.p>
 
                     <motion.div
-                        className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+                        className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16 sm:mb-20"
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 1 }}
                     >
                         <a
                             href="#projects"
-                            className="px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-[0_6px_25px_rgba(59,130,246,0.6)] hover:-translate-y-0.5"
+                            className="inline-block px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-[0_6px_25px_rgba(59,130,246,0.6)] hover:-translate-y-0.5 text-center min-w-[150px]"
                             style={{ 
                                 backgroundColor: 'var(--cta)',
                                 color: 'white',
@@ -94,7 +94,7 @@ const Hero = () => {
                         </a>
                         <a
                             href="#contact"
-                            className="px-8 py-4 rounded-lg font-semibold border-2 transition-all duration-300 hover:scale-105 hover:bg-[var(--cta)] hover:text-white hover:shadow-[0_6px_25px_rgba(59,130,246,0.4)]"
+                            className="inline-block px-6 py-3 rounded-lg font-semibold border-2 transition-all duration-300 hover:scale-105 hover:bg-[var(--cta)] hover:text-white hover:shadow-[0_6px_25px_rgba(59,130,246,0.4)] active:scale-100 focus:outline-none text-center min-w-[150px]"
                             style={{ 
                                 borderColor: 'var(--cta)',
                                 color: 'var(--cta)'
@@ -103,22 +103,34 @@ const Hero = () => {
                             Contact Me
                         </a>
                     </motion.div>
-                </motion.div>
 
-                {/* Scroll Indicator */}
-                <motion.button
-                    onClick={scrollToAbout}
-                    className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1, y: [0, 10, 0] }}
-                    transition={{ 
-                        opacity: { delay: 1.5 },
-                        y: { duration: 1.5, repeat: Infinity }
-                    }}
-                    style={{ color: 'var(--text-secondary)' }}
-                >
-                    <FaArrowDown size={24} />
-                </motion.button>
+                    {/* Scroll Indicator - Moved inside content with spacing */}
+                    <motion.div
+                        className="flex flex-col items-center gap-2"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: 1.5 }}
+                    >
+                        <motion.p
+                            className="text-xs uppercase tracking-widest font-semibold"
+                            style={{ color: 'var(--text-secondary)' }}
+                            animate={{ opacity: [0.5, 1, 0.5] }}
+                            transition={{ duration: 2, repeat: Infinity }}
+                        >
+                            Scroll Down
+                        </motion.p>
+                        <motion.button
+                            onClick={scrollToAbout}
+                            className="p-2 rounded-full transition-all duration-300 hover:bg-[var(--cta)] hover:text-white"
+                            animate={{ y: [0, 8, 0] }}
+                            transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+                            style={{ color: 'var(--text-secondary)' }}
+                            aria-label="Scroll to About section"
+                        >
+                            <FaArrowDown size={20} />
+                        </motion.button>
+                    </motion.div>
+                </motion.div>
             </div>
         </section>
     );

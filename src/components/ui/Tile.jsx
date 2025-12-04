@@ -23,7 +23,7 @@ const Tile = ({ project, colHeight }) => {
             href={project.link || "#"}
             target={project.link && project.link !== "#" ? "_blank" : "_self"}
             rel={project.link && project.link !== "#" ? "noopener noreferrer" : ""}
-            className="tile-card group inline-block float-left relative pointer-events-auto overflow-hidden no-underline text-white transition-all duration-[350ms] ease-out hover:scale-[1.02] hover:z-20"
+            className="tile-card group block relative pointer-events-auto overflow-hidden no-underline text-white transition-all duration-[350ms] ease-out hover:scale-[1.02] hover:z-20"
             style={{
                 height: colHeight,
                 backgroundImage: `url(${getBackgroundImage()})`,

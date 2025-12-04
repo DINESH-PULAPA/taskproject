@@ -77,13 +77,15 @@ const About = () => {
                         <a
                             href="/resume.pdf"
                             download
-                            className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105"
+                            className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-[0_6px_25px_rgba(59,130,246,0.6)] hover:-translate-y-0.5"
                             style={{ 
                                 backgroundColor: 'var(--cta)',
-                                color: 'white'
+                                color: 'white',
+                                boxShadow: '0 4px 15px rgba(59, 130, 246, 0.4)',
+                                width: 'fit-content'
                             }}
                         >
-                            <FaDownload />
+                            <FaDownload size={16} />
                             Download Resume
                         </a>
                     </div>

@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Parallax from 'parallax-js';
 import Tile from '../ui/Tile';
-import Switch from '../ui/Switch';
 import resumeData from '../../data/data1.json';
 
 const Scene = () => {
@@ -10,18 +9,8 @@ const Scene = () => {
         height: window.innerHeight,
         colHeight: window.innerHeight / 2
     });
-    const [activeFilter, setActiveFilter] = useState('all');
     const [isLoading, setIsLoading] = useState(true);
     const [tilesRendered, setTilesRendered] = useState(false);
-
-    const filterOptions = [
-        { value: 'all', label: 'All' },
-        { value: 'work', label: 'Experience' },
-        { value: 'education', label: 'Education' },
-        { value: 'skills', label: 'Skills' },
-        { value: 'projects', label: 'Projects' },
-        { value: 'achievements', label: 'Achievements' }
-    ];
 
     // Transform resume data into tile format with error handling
     const transformedData = React.useMemo(() => {
@@ -83,9 +72,10 @@ const Scene = () => {
     useEffect(() => {
         const handleResize = () => {
             const vh = window.innerHeight;
+            const isMobile = window.innerWidth < 768;
             setDimensions({
-                height: vh,
-                colHeight: vh / 2
+                height: isMobile ? vh * 2 : vh,
+                colHeight: isMobile ? vh - 10 : vh / 2
             });
         };
 
@@ -132,14 +122,8 @@ const Scene = () => {
         }
     }, [tilesRendered]);
 
-    const handleFilterChange = (filter) => {
-        setActiveFilter(filter);
-    };
-
-    // Filter data based on active filter
-    const filteredData = activeFilter === 'all'
-        ? transformedData
-        : transformedData.filter(item => item.type === activeFilter);
+    // Show all data without filtering
+    const filteredData = transformedData;
 
     // Show loading state
     if (isLoading) {
@@ -164,13 +148,6 @@ const Scene = () => {
             style={{ height: dimensions.height, backgroundColor: 'var(--bg)', isolation: 'isolate' }}
             data-pointer-events="true"
         >
-            <div style={{ position: 'relative', zIndex: 999999 }}>
-                <Switch
-                    options={filterOptions}
-                    activeOption={activeFilter}
-                    onSwitch={handleFilterChange}
-                />
-            </div>
             <div
                 className="layer main absolute z-10 pointer-events-none"
                 data-depth="1.0"
@@ -180,10 +157,10 @@ const Scene = () => {
                     height: dimensions.height,
                     width: '150%',
                     left: '-25%',
-                    padding: '20px'
+                    padding: '5px'
                 }}
             >
-                <div className="w-full">
+                <div className="w-full grid grid-cols-2 md:grid-cols-6 lg:grid-cols-8 gap-1 md:gap-4">
                     {filteredData.map((item, index) => (
                         <Tile key={index} project={item} colHeight={dimensions.colHeight} />
                     ))}

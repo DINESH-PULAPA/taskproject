@@ -74,8 +74,8 @@ const Scene = () => {
             const vh = window.innerHeight;
             const isMobile = window.innerWidth < 768;
             setDimensions({
-                height: isMobile ? vh * 2 : vh,
-                colHeight: isMobile ? vh - 10 : vh / 2
+                height: isMobile ? vh : vh,
+                colHeight: isMobile ? (vh * 0.33) : vh / 2
             });
         };
 
@@ -157,7 +157,7 @@ const Scene = () => {
                     height: dimensions.height,
                     width: '150%',
                     left: '-25%',
-                    padding: '5px'
+                    padding: window.innerWidth < 768 ? '4px' : '20px'
                 }}
             >
                 <div className="w-full grid grid-cols-2 md:grid-cols-6 lg:grid-cols-8 gap-1 md:gap-4">

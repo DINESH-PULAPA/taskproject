@@ -94,11 +94,13 @@ const Hero = () => {
                         </a>
                         <a
                             href="#contact"
-                            className="inline-block px-6 py-3 rounded-lg font-semibold border-2 transition-all duration-300 hover:scale-105 hover:bg-[var(--cta)] hover:text-white hover:shadow-[0_6px_25px_rgba(59,130,246,0.4)] active:scale-100 focus:outline-none text-center min-w-[150px]"
+                            className="inline-block px-6 py-3 rounded-lg font-semibold border-2 transition-all duration-300 hover:scale-105 hover:bg-[var(--cta)] hover:shadow-[0_6px_25px_rgba(59,130,246,0.4)] active:scale-100 focus:outline-none text-center min-w-[150px]"
                             style={{ 
                                 borderColor: 'var(--cta)',
                                 color: 'var(--cta)'
                             }}
+                            onMouseEnter={(e) => e.currentTarget.style.color = 'var(--bg)'}
+                            onMouseLeave={(e) => e.currentTarget.style.color = 'var(--cta)'}
                         >
                             Contact Me
                         </a>

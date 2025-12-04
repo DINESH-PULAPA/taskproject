@@ -21,6 +21,7 @@ const Navbar = () => {
         { name: 'About', href: '#about' },
         { name: 'Experience', href: '#experience' },
         { name: 'Education', href: '#education' },
+        { name: 'Achievements', href: '#achievements' },
         { name: 'Projects', href: '#projects' },
         { name: 'Skills', href: '#skills' },
         { name: 'Contact', href: '#contact' }
@@ -47,24 +48,25 @@ const Navbar = () => {
                     </div>
 
                     {/* Desktop Navigation */}
-                    <div className="hidden md:flex items-center space-x-8">
-                        {navLinks.map((link) => (
-                            <a
-                                key={link.name}
-                                href={link.href}
-                                onClick={(e) => scrollToSection(e, link.href)}
-                                className="nav-link text-sm font-medium transition-colors duration-200"
-                                style={{ color: 'var(--text-primary)' }}
-                            >
-                                {link.name}
-                            </a>
-                        ))}
+                    <div className="hidden md:flex items-center flex-1 justify-end">
+                        <div className="flex items-center space-x-8 mr-12">
+                            {navLinks.map((link) => (
+                                <a
+                                    key={link.name}
+                                    href={link.href}
+                                    onClick={(e) => scrollToSection(e, link.href)}
+                                    className="nav-link text-sm font-medium transition-colors duration-200"
+                                    style={{ color: 'var(--text-primary)' }}
+                                >
+                                    {link.name}
+                                </a>
+                            ))}
+                        </div>
                         <ThemeToggle />
                     </div>
 
                     {/* Mobile menu button */}
-                    <div className="md:hidden flex items-center space-x-4">
-                        <ThemeToggle />
+                    <div className="md:hidden flex items-center gap-3">
                         <button
                             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                             className="p-2 rounded-md"
@@ -72,6 +74,7 @@ const Navbar = () => {
                         >
                             {mobileMenuOpen ? <HiX size={24} /> : <HiMenu size={24} />}
                         </button>
+                        <ThemeToggle />
                     </div>
                 </div>
             </div>
